@@ -1,0 +1,48 @@
+{
+  "name": "@mylifenp/round",
+  "version": "1.0.0",
+  "contributors": [
+    "Amit Shah <mylifenp@yahoo.com>"
+  ],
+  "description": "A modern number rounding utility library for JavaScript and TypeScript.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scope": "@mylifenp",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "ci": "npm run test-build & npm t & wait",
+    "test": "jest",
+    "test-build": "npm run build && node test-build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylifenp/round.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mylifenp/round/issues"
+  },
+  "homepage": "https://github.com/mylifenp/round#readme",
+  "keywords": [],
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 11"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.9",
+    "jest": "^29.7.0",
+    "rollup": "^1.27.2",
+    "rollup-plugin-babel-minify": "^9.1.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "ts-jest": "^29.1.1",
+    "tslib": "^2.6.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
+  }
+}
